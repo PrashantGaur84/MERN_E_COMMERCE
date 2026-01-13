@@ -6,8 +6,11 @@ import cartRouter from './Routes/cart.js';
 import addressRouter from './Routes/address.js'
 import paymentRouter from './Routes/payment.js'
 import cors from 'cors';
+import dotenv from 'dotenv'
 
-mongoose.connect("mongodb+srv://prashantgaur20786_db_user:3niwoZAWzxSRo5pn@cluster0.x8k6puj.mongodb.net/" , {
+dotenv.config()
+
+mongoose.connect(process.env.DB_String , {
     dbName:"E_Commerce"
 }).then(()=>console.log("MongoDB Connected Successfully")).catch((err)=>console.log(err));
 
