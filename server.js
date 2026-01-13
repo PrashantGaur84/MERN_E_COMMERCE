@@ -7,7 +7,7 @@ import addressRouter from './Routes/address.js'
 import paymentRouter from './Routes/payment.js'
 import cors from 'cors';
 
-mongoose.connect("mongodb+srv://prashantgaur20786_db_user:lfWmonso9y43Dsom@cluster0.x8k6puj.mongodb.net/" , {
+mongoose.connect("mongodb+srv://prashantgaur20786_db_user:3niwoZAWzxSRo5pn@cluster0.x8k6puj.mongodb.net/" , {
     dbName:"E_Commerce"
 }).then(()=>console.log("MongoDB Connected Successfully")).catch((err)=>console.log(err));
 
